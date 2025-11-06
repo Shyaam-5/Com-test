@@ -1,6 +1,7 @@
 groq 
 sounddevice 
 scipy 
+flask
 jiwer
 python-dotenv
 librosa
@@ -8,3 +9,5 @@ pydub
 gTTS
 google-genai
 gunicorn
+werkzeug
+
