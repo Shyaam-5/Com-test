@@ -69,7 +69,8 @@ def init_performance_db():
     conn.commit()
     conn.close()
 
-
+init_user_db()
+init_performance_db()
 # ===== USER MANAGEMENT FUNCTIONS =====
 
 def create_user(email, username, password):
@@ -570,6 +571,4 @@ def api_submit_quiz():
 # ===== APPLICATION INITIALIZATION =====
 
 if __name__ == '__main__':
-    init_user_db()
-    init_performance_db()
     app.run(debug=True, host='0.0.0.0', port=5000)
